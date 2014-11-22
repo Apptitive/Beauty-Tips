@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_roja_count"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/TableRowText" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/table_colomn_divider" />
+
+    <TextView
+        android:id="@+id/tv_sehri_time"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/TableRowText" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/table_colomn_divider" />
+
+    <TextView
+        android:id="@+id/tv_ifter_time"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/TableRowText" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/table_colomn_divider" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size_15"
+        android:gravity="center"
+        android:textColor="@color/TableRowText" />
+
+</LinearLayout>

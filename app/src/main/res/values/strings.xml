@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beauty Tips</string>
+    <string name="action_settings">সেটিংস</string>
+    <string name="action_alarm">অ্যালার্ম</string>
+    <string name="font_solaimanlipi">solaimanlipinormal.ttf</string>
+    <string name="font_arabic">a_nefel_adeti.ttf</string>
+    <string name="file_path_region">region.txt</string>
+    <string name="bangla_character_zero">০</string>
+    <string name="bangla_character_one">১</string>
+    <string name="bangla_character_two">২</string>
+    <string name="bangla_character_three">৩</string>
+    <string name="bangla_character_four">৪</string>
+    <string name="bangla_character_five">৫</string>
+    <string name="bangla_character_six">৬</string>
+    <string name="bangla_character_seven">৭</string>
+    <string name="bangla_character_eight">৮</string>
+    <string name="bangla_character_nine">৯</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="sehri_time">সেহরির শেষ সময়</string>
+    <string name="iftar">ইফতার</string>
+    <string name="ramadan">রমজান</string>
+    <string name="date">তারিখ</string>
+    <string name="sehri">সেহরি</string>
+    <string name="saom">সাওম</string>
+    <string name="tarabih">তারাবীহ নামায</string>
+    <string name="saom_vongo">সাওম ভঙ্গের কারণসমূহ</string>
+    <string name="sehri_iftar_time">সেহরি ও ইফতারের সময়সূচী</string>
+    <string name="niyat_o_doa">নিয়াত ও দোয়া</string>
+    <string name="ramadan_app_alarm">রমজান অ্যাপ অ্যালার্ম</string>
+    <string name="alarm_turn_off">অ্যালার্ম বন্ধ করার জন্য টানুন</string>
+    <string name="ramadan_app_alarm_eng">Ramadan App Alarm</string>
+    <string name="alarm_turn_off_eng">Please! Drag it to turn off the alarm</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="alarm_time">অ্যালার্মের সময়</string>
+    <string name="alarm_time_off">অ্যালার্ম সেট করা হয়নি</string>
+    <string name="pref_key_alarm_time">pref_key_alarm_time</string>
+    <string name="before_sehri">সেহরির পূর্বে</string>
+    <string name="before_iftar">ইফতারের পূর্বে</string>
+    <string name="widget_label">Ramjan - রমজান</string>
+    <string name="widget_left_label">সময়সূচী</string>
+
+    <string-array name="sehri_time">
+        <item>০ ঘন্টা ৩০ মিনিট</item>
+        <item>১ ঘন্টা ০ মিনিট </item>
+        <item>১ ঘন্টা ৩০ মিনিট </item>
+        <item>২ ঘন্টা ০ মিনিট</item>
+    </string-array>
+    <string-array name="iftar_time">
+        <item>০ মিনিট</item>
+        <item>৫ মিনিট</item>
+        <item>১০ মিনিট</item>
+        <item>৩০ মিনিট</item>
+    </string-array>
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="no_title">No Title</string>
+
+</resources>

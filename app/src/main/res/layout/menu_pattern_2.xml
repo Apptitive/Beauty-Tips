@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dp_8"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_300"
+        android:layout_weight="2">
+
+        <ViewStub
+            android:id="@+id/sub_pattern_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_4"
+            android:inflatedId="@+id/inflated_sub_pattern_left" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_300"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_4">
+
+        <ViewStub
+            android:id="@+id/sub_pattern_right_top"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_weight="1"
+            android:inflatedId="@+id/inflated_sub_pattern_right_top" />
+
+        <ViewStub
+            android:id="@+id/sub_pattern_right_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_weight="1"
+            android:inflatedId="@+id/inflated_sub_pattern_right_bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>

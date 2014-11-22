@@ -1,0 +1,50 @@
+<resources>
+
+    <!--common file dimen start-->
+    <dimen name="text_size_35">52.50sp</dimen>
+    <dimen name="text_size_25">37.5sp</dimen>
+    <dimen name="text_size_20">30sp</dimen>
+    <dimen name="text_size_18">27sp</dimen>
+    <dimen name="text_size_15">22.5sp</dimen>
+    <dimen name="text_size_12">18sp</dimen>
+
+    <dimen name="dp_ng_80">-120dp</dimen>
+    <dimen name="dp_ng_75">-112.5dp</dimen>
+    <dimen name="dp_ng_60">-90dp</dimen>
+    <dimen name="dp_ng_50">-75dp</dimen>
+    <dimen name="dp_ng_30">-45dp</dimen>
+    <dimen name="dp_ng_20">-30dp</dimen>
+    <dimen name="dp_ng_15">-22.5dp</dimen>
+    <dimen name="dp_ng_10">-15dp</dimen>
+    <dimen name="dp_ng_6">-9dp</dimen>
+    <dimen name="dp_ng_5">-7.5dp</dimen>
+    <dimen name="dp_ng_3">-4.5dp</dimen>
+
+    <dimen name="dp_294">441dp</dimen>
+    <dimen name="dp_240">360dp</dimen>
+    <dimen name="dp_300">450dp</dimen>
+    <dimen name="dp_150">225dp</dimen>
+    <dimen name="dp_120">180dp</dimen>
+    <dimen name="dp_110">165dp</dimen>
+    <dimen name="dp_105">157.50dp</dimen>
+    <dimen name="dp_80">120dp</dimen>
+    <dimen name="dp_72">108dp</dimen>
+    <dimen name="dp_70">105dp</dimen>
+    <dimen name="dp_50">75dp</dimen>
+    <dimen name="dp_40">60dp</dimen>
+    <dimen name="dp_30">45dp</dimen>
+    <dimen name="dp_25">37.5dp</dimen>
+    <dimen name="dp_20">30dp</dimen>
+    <dimen name="dp_18">27dp</dimen>
+    <dimen name="dp_15">22.5dp</dimen>
+    <dimen name="dp_12">18dp</dimen>
+    <dimen name="dp_10">15dp</dimen>
+    <dimen name="dp_5">7.5dp</dimen>
+    <dimen name="dp_6">9dp</dimen>
+    <dimen name="dp_8">12dp</dimen>
+    <dimen name="dp_4">6dp</dimen>
+    <dimen name="dp_2">3dp</dimen>
+    <dimen name="dp_action_bar">57dp</dimen>
+    <!--common file dimen end-->
+
+</resources>

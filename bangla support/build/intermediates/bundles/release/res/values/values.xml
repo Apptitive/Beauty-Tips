@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/android%20studio%20workspace/BeautyTips/bangla%20support/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">AndroidBanglaSupport</string>
+    <!-- From: file:/E:/android%20studio%20workspace/BeautyTips/bangla%20support/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+</resources>

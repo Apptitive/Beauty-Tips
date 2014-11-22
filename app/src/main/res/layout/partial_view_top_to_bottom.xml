@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_selector"
+    android:gravity="center">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/niv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:src="@drawable/ramadan" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/niv_icon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15"
+        android:textStyle="bold" />
+
+</RelativeLayout>

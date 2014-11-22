@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="@string/pref_key_location_settings"
+        android:title="@string/sync_title">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_sync_settings"
+            android:title="@string/pref_title_sync_settings" />
+        <ListPreference
+            android:defaultValue="None"
+            android:key="@string/pref_key_location"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/sync_options" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_key_about_us"
+        android:title="@string/title_about_us">
+        <Preference
+            android:key="@string/pref_key_preference_about_us"
+            android:summary="about us" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
