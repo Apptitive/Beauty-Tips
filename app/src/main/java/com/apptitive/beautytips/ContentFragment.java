@@ -76,7 +76,7 @@ public class ContentFragment extends ListFragment implements ContentListAdapter.
     private void parallaxListViewBackground(int drawable) {
         final ListView listView = getListView();
         if (listView instanceof Parallaxor) {
-            ((ParallaxListView) listView).parallaxViewBackgroundBy(listView, getResources().getDrawable(drawable), .2f);
+            ((ParallaxListView) listView).parallaxViewBackgroundBy(listView, getResources().getDrawable(drawable), .15f);
         }
     }
 

@@ -49,8 +49,8 @@ public class SettingsActivity extends PreferenceActivity {
             getActionBar().hide();
         }
         addPreferencesFromResource(com.apptitive.beautytips.R.xml.pref_general);
-        setContentView(com.apptitive.beautytips.R.layout.activity_settings);
-        entries = new String[]{"None","Daily", "Weekly"};
+        setContentView(R.layout.activity_settings);
+        entries = new String[]{"None", "Daily", "Weekly"};
         isPreferenceSelected = false;
         settingsActivity = this;
         preferenceHelper = new PreferenceHelper(this);
@@ -110,7 +110,7 @@ public class SettingsActivity extends PreferenceActivity {
                 ListPreference listPreference = (ListPreference) preference;
                 int index = listPreference.findIndexOfValue(stringValue);
                 preference.setSummary(entries[index]);
-                if (isPreferenceSelected &preferenceHelper.getBoolean(Constants.PREF_KEY_SYNC_SETTINGS)) {
+                if (isPreferenceSelected & preferenceHelper.getBoolean(Constants.PREF_KEY_SYNC_SETTINGS)) {
                     AlarmUtil.setUpAlarm(settingsActivity, getSelectedDays(index));
                 }
                 isPreferenceSelected = true;

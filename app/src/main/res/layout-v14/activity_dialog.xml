@@ -11,7 +11,7 @@ android:layout_width="wrap_content">
     android:layout_centerInParent="true"
     android:background="@android:color/white">
 
-    <com.apptitive.content_display.views.BanglaTextView
+    <com.apptitive.beautytips.views.BanglaTextView
         android:id="@+id/title_alarm"
         android:background="@color/blue_dark"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@ android:layout_width="wrap_content">
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_20" />
 
-    <com.apptitive.content_display.views.BanglaTextView
+    <com.apptitive.beautytips.views.BanglaTextView
         android:id="@+id/tv_before_iftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@ android:layout_width="wrap_content">
         android:background="@drawable/sp_bg"
         android:textSize="@dimen/text_size_15" />
 
-    <com.apptitive.content_display.views.BanglaTextView
+    <com.apptitive.beautytips.views.BanglaTextView
         android:id="@+id/tv_before_sehri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@ android:layout_width="wrap_content">
         android:layout_marginTop="@dimen/dp_30"
         android:layout_below="@id/sp_sehri_time">
 
-        <com.apptitive.content_display.views.BanglaTextView
+        <com.apptitive.beautytips.views.BanglaTextView
             android:id="@+id/tv_dialog_action_cancel"
             android:gravity="center"
             android:layout_width="0dp"
@@ -125,7 +125,7 @@ android:layout_width="wrap_content">
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_size_15" />
 
-        <com.apptitive.content_display.views.BanglaTextView
+        <com.apptitive.beautytips.views.BanglaTextView
             android:id="@+id/tv_dialog_action_ok"
             android:gravity="center"
             android:layout_width="0dp"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.apptitive.content_display.AboutUsActivity">
+    tools:context="com.apptitive.beautytips.AboutUsActivity">
 
     <LinearLayout
         android:id="@+id/custom_actionbar"
@@ -20,12 +20,12 @@
             android:orientation="horizontal"
             android:background="@drawable/selectable_background_ramadan">
 
-            <!--<ImageView
+            <ImageView
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="false"
-                android:src="@drawable/abc_ic_ab_back_holo_light" />-->
+                android:src="@drawable/abc_ic_ab_back_holo_light" />
 
             <ImageView
                 android:layout_gravity="center_vertical"
@@ -35,7 +35,7 @@
                 android:paddingRight="@dimen/dp_2"
                 android:clickable="false"
                 android:src="@drawable/ic_action_settings" />
-            <com.apptitive.content_display.views.BanglaTextView
+            <com.apptitive.beautytips.views.BanglaTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"

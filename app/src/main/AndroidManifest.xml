@@ -77,10 +77,6 @@
         </receiver>
 
         <activity
-            android:name=".StartActivity"
-            android:label="@string/title_activity_start" />
-
-        <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_start" />
 
