@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="table_colomn_divider">#33000000</color>
-    <color name="table_row_selected">#80009245</color>
+    <color name="purple_lite">#80662D91</color>
     <color name="table_header_bg">#FAFAC0</color>
     <color name="table_even_row_bg">#E7EAF2</color>
     <color name="bgColor">#81BEF7</color>
@@ -12,13 +12,13 @@
     <color name="soily">#F5F6CE</color>
     <color name="white_20_transparent">#33ffffff</color>
     <color name="transparent_button">#666666</color>
-    <color name="black">#B3000000</color>
+    <color name="purple">#B3662D91</color>
     <color name="black_80">#CC000000</color>
     <color name="black_90">#F2000000</color>
     <color name="white">#FFFFFF</color>
     <color name="white_dark">#F2F2F2</color>
-    <color name="ActionBar_Navigation">#05764A</color>
-    <color name="AB_Green_ContentDisplay">#B3009245</color>
+    <color name="ActionBar_Navigation">@color/AB_Purple_ContentDisplay</color>
+    <color name="AB_Purple_ContentDisplay">#E6662D91</color>
     <color name="AB_White_ContentDisplay">#1AFFFFFF</color>
     <color name="Green_ContentDisplay">#009245</color>
     <color name="Red_ContentDisplay">#ED1C24</color>
@@ -164,5 +164,5 @@
     <color name="Black">#000000</color>
     <color name="white_transparent_20">#33FFFFFF</color>
     <color name="blue_light">#81BEF7</color>
-    <color name="blue_dark">@color/AB_Green_ContentDisplay</color>
+    <color name="blue_dark">@color/AB_Purple_ContentDisplay</color>
 </resources>

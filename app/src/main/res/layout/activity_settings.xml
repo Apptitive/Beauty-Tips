@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/custom_actionbar"
-        android:background="@color/AB_Green_ContentDisplay"
+        android:background="@color/AB_Purple_ContentDisplay"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_action_bar"
         android:orientation="horizontal">
