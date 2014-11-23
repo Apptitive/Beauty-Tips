@@ -102,7 +102,7 @@ public class AboutUsDialog {
         });
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(mContext)
-                .setTitle("Content Display V" + versionName).setView(webView)
+                .setTitle("Beauty Tips v" + versionName).setView(webView)
                 .setPositiveButton(closeString, new Dialog.OnClickListener() {
                     public void onClick(final DialogInterface dialogInterface,
                                         final int i) {

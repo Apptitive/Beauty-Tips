@@ -48,7 +48,7 @@ public class SettingsActivity extends PreferenceActivity {
         if (Build.VERSION.SDK_INT >= 11) {
             getActionBar().hide();
         }
-        addPreferencesFromResource(com.apptitive.beautytips.R.xml.pref_general);
+        addPreferencesFromResource(R.xml.pref_general);
         setContentView(R.layout.activity_settings);
         entries = new String[]{"None", "Daily", "Weekly"};
         isPreferenceSelected = false;
@@ -63,9 +63,7 @@ public class SettingsActivity extends PreferenceActivity {
                 finish();
             }
         });
-
     }
-
 
     private void setupSimplePreferencesScreen() {
         ListPreference listPreference = (ListPreference) findPreference(getString(com.apptitive.beautytips.R.string.pref_key_location));
@@ -133,6 +131,4 @@ public class SettingsActivity extends PreferenceActivity {
         preference.setOnPreferenceChangeListener(sBindPreferenceSummaryToValueListener);
         sBindPreferenceSummaryToValueListener.onPreferenceChange(preference, PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
     }
-
-
 }
