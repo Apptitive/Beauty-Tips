@@ -177,7 +177,6 @@ public class MainActivity extends BaseActionBar {
         });
     }
 
-
     private void flash() {
         if (null != llMain && llMain.getChildCount() > 0) {
             try {

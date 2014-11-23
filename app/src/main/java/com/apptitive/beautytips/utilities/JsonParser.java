@@ -17,7 +17,6 @@ import java.util.List;
  */
 public class JsonParser {
 
-
     public static List<ContentMenu> getParsedContentMenus(String menuJsonString) {
         Gson gson = new Gson();
         return Arrays.asList(gson.fromJson(menuJsonString, ContentMenu[].class));

@@ -7,8 +7,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.apptitive.beautytips.R;
 import com.apptitive.beautytips.model.Content;
+import com.apptitive.beautytips.utilities.Config;
+import com.apptitive.beautytips.utilities.HttpHelper;
 
 import java.util.List;
 
@@ -16,13 +20,18 @@ import java.util.List;
  * Created by Iftekhar on 6/4/2014.
  */
 public class ContentListAdapter extends ArrayAdapter<Content> {
-    private int layoutResId;
-    private ContentCallback contentCallback;
 
-    public ContentListAdapter(Context context, int resource, List<Content> objects, ContentCallback contentCallback) {
+    private int layoutResId;
+    private String menuId;
+    private ContentCallback contentCallback;
+    private ImageLoader imageLoader;
+
+    public ContentListAdapter(Context context, int resource, String menuId, List<Content> objects, ContentCallback contentCallback) {
         super(context, resource, objects);
+        this.menuId = menuId;
         layoutResId = resource;
         this.contentCallback = contentCallback;
+        imageLoader = HttpHelper.getInstance(context).getImageLoader();
     }
 
     @Override
@@ -46,12 +55,14 @@ public class ContentListAdapter extends ArrayAdapter<Content> {
             convertView = LayoutInflater.from(getContext()).inflate(layoutResId, parent, false);
             holder = new ViewHolder();
             holder.selectableView = convertView.findViewById(R.id.brief_content);
+            holder.networkImageView = (NetworkImageView) convertView.findViewById(R.id.imageView_content_title);
             holder.tvHeader = (TextView) convertView.findViewById(R.id.textView_content_header);
             holder.tvBrief = (TextView) convertView.findViewById(R.id.textView_content_brief);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+        holder.networkImageView.setImageUrl(Config.getImageUrl(getContext()) + menuId + ".9.png", imageLoader);
         holder.tvHeader.setText(content.getHeader());
         holder.tvBrief.setText(content.getShortDescription());
 
@@ -72,6 +83,7 @@ public class ContentListAdapter extends ArrayAdapter<Content> {
 
     private class ViewHolder {
         View selectableView;
+        NetworkImageView networkImageView;
         TextView tvHeader;
         TextView tvBrief;
     }

@@ -5,10 +5,10 @@
     android:layout_height="wrap_content"
     android:background="@color/ContentItemHeaderBg">
 
-    <ImageView
-        android:id="@+id/imageView_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView_content_title"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
         android:paddingLeft="@dimen/dp_8"
         android:paddingRight="@dimen/dp_10"
         android:paddingTop="@dimen/dp_10"
@@ -19,7 +19,7 @@
         android:id="@+id/textView_content_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView_topic"
+        android:layout_toRightOf="@id/imageView_content_title"
         android:layout_centerVertical="true"
         android:textSize="@dimen/text_size_20"
         android:textColor="@color/ContentItemHeaderText" />

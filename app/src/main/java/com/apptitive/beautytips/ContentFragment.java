@@ -60,7 +60,7 @@ public class ContentFragment extends ListFragment implements ContentListAdapter.
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         menuId = contentProvider.getMenuId();
-        contentListAdapter = new ContentListAdapter(getActivity(), R.layout.list_item_content, dbResultToContent(DbManager.getInstance().getDbContentForMenu(menuId)), this);
+        contentListAdapter = new ContentListAdapter(getActivity(), R.layout.list_item_content, menuId, dbResultToContent(DbManager.getInstance().getDbContentForMenu(menuId)), this);
     }
 
     private List<Content> dbResultToContent(List<DbContent> dbContents) {
