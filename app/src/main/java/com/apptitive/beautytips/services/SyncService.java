@@ -90,7 +90,27 @@ public class SyncService extends Service {
 
             }
         }
-        );
+        ) {
+            @Override
+            protected Response<JSONArray> parseNetworkResponse(NetworkResponse response) {
+                try {
+                    final String TYPE_UTF8_CHARSET = "charset=UTF-8";
+                    String type = response.headers.get(HTTP.CONTENT_TYPE);
+                    if (type == null) {
+                        LogUtil.LOGE("content type was null");
+                        type = TYPE_UTF8_CHARSET;
+                        response.headers.put(HTTP.CONTENT_TYPE, type);
+                    } else if (!type.contains("UTF-8")) {
+                        LogUtil.LOGE("content type had UTF-8 missing");
+                        type += ";" + TYPE_UTF8_CHARSET;
+                        response.headers.put(HTTP.CONTENT_TYPE, type);
+                    }
+                } catch (Exception e) {
+                    //print stacktrace e.g.
+                }
+                return super.parseNetworkResponse(response);
+            }
+        };
         httpHelper.addToRequestQueue(topicRequest);
         LogUtil.LOGE("inside test service");
         return START_STICKY;

@@ -11,6 +11,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.apptitive.beautytips.utilities.Config;
 import com.apptitive.beautytips.utilities.Constants;
 import com.apptitive.beautytips.utilities.HttpHelper;
+import com.apptitive.beautytips.utilities.Utilities;
 
 
 public class ContentActivity extends BaseActionBar implements ContentFragment.ContentProvider {
@@ -31,7 +32,7 @@ public class ContentActivity extends BaseActionBar implements ContentFragment.Co
 
         actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.ActionBarHomeBg)));
-        actionBar.setTitle(menuTitle);
+        actionBar.setTitle(Utilities.getBanglaSpannableString(menuTitle, this));
 
         ImageLoader imageLoader = HttpHelper.getInstance(this).getImageLoader();
         imageLoader.get(Config.getImageUrl(this) + menuId + "_ab_title.png", new ImageLoader.ImageListener() {

@@ -66,7 +66,7 @@ public class DetailsActivity extends BaseActionBar implements DetailsFragment.De
 
         actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.ActionBarInnerBg)));
-        actionBar.setTitle(content.getHeader());
+        actionBar.setTitle(Utilities.getBanglaSpannableString(content.getHeader(), this));
         ImageLoader imageLoader = HttpHelper.getInstance(this).getImageLoader();
         imageLoader.get(Config.getImageUrl(this) + menuId + "_ab_title.png", new ImageLoader.ImageListener() {
             @Override
@@ -121,7 +121,7 @@ public class DetailsActivity extends BaseActionBar implements DetailsFragment.De
                     convertView = getLayoutInflater().inflate(R.layout.list_item_nav_drawer, parent, false);
                 }
                 tvHeader = (TextView) convertView.findViewById(R.id.btv_nav);
-                tvHeader.setText(getItem(position).getHeader());
+                tvHeader.setText(Utilities.getBanglaSpannableString(getItem(position).getHeader(), DetailsActivity.this));
                 if (content.getContentId().equals(DetailsActivity.this.content.getContentId()))
                     convertView.setBackgroundColor(getResources().getColor(R.color.NavDrawerListItemSelected));
                 return convertView;

@@ -7,9 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.apptitive.beautytips.R;
 import com.apptitive.beautytips.model.Detail;
 import com.apptitive.beautytips.utilities.Constants;
-import com.apptitive.beautytips.R;
+import com.apptitive.beautytips.utilities.Utilities;
 
 import java.util.List;
 
@@ -89,7 +90,7 @@ public class DetailsListAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.tvDetail.setText(detail.getText());
+        holder.tvDetail.setText(Utilities.getBanglaSpannableString(detail.getText(), context));
 
         return convertView;
     }

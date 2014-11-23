@@ -13,6 +13,7 @@ import com.apptitive.beautytips.R;
 import com.apptitive.beautytips.model.Content;
 import com.apptitive.beautytips.utilities.Config;
 import com.apptitive.beautytips.utilities.HttpHelper;
+import com.apptitive.beautytips.utilities.Utilities;
 
 import java.util.List;
 
@@ -63,8 +64,8 @@ public class ContentListAdapter extends ArrayAdapter<Content> {
             holder = (ViewHolder) convertView.getTag();
         }
         holder.networkImageView.setImageUrl(Config.getImageUrl(getContext()) + menuId + ".9.png", imageLoader);
-        holder.tvHeader.setText(content.getHeader());
-        holder.tvBrief.setText(content.getShortDescription());
+        holder.tvHeader.setText(Utilities.getBanglaSpannableString(content.getHeader(), getContext()));
+        holder.tvBrief.setText(Utilities.getBanglaSpannableString(content.getShortDescription(), getContext()));
 
         final ViewHolder finalViewHolder = holder;
         finalViewHolder.selectableView.setOnClickListener(new View.OnClickListener() {
